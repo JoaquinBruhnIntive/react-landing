@@ -1,23 +1,155 @@
+@import url(../../../../globalStyle.css);
+
 .slide{
-    background-color: pink;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    transition: 0.4s;
+    width: 100%;
+    height: 720px;
+}
+.hero-content{
+    position: absolute;
+    width: 600px;
+    top: 20px;
+    padding:20px;
+}
+.hero-content > h2{
+    font-size: 4rem;
+    color: var(--very-light-grey);
+}
+.hero-content > h2:nth-child(2){
+    margin-bottom: 20px;
+}
+.hero-content > p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--very-light-grey);
+}
+.hero-content > a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px 30px;
+    color: var(--very-light-grey);
+    background-color: var(--very-dark-blue);
+
+}
+.buttonController{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+}
+.buttonController > button{
+    border: none;
+    padding: 30px;
+    background-color: var(--very-light-grey);
 }
 /*----------diferent slide classes------------*/
 .paramour{
-    color: greenyellow;
-    transition: 1s;
+    background-image: url(../../../../assets/home/desktop/image-hero-paramour.jpg);
+}
+.paramour > .buttonController > button:nth-child(1) {
+    color: var(--very-light-grey);
+    background-color: var(--very-dark-blue);
 }
 
 .federal{
-    color: brown;
-    transition: 1s;
+    background-image: url(../../../../assets/home/desktop/image-hero-federal.jpg);
 }
+.federal > .buttonController > button:nth-child(2) {
+    color: var(--very-light-grey);
+    background-color: var(--very-dark-blue);
+} 
 
 .seraph{
-    color: red;
-    transition: 1s;
+    background-image: url(../../../../assets/home/desktop/image-hero-seraph.jpg);
 }
+.seraph > .buttonController > button:nth-child(3) {
+    color: var(--very-light-grey);
+    background-color: var(--very-dark-blue);
+} 
 
 .trinity{
-    color: purple;
-    transition: 1s;
+    background-image: url(../../../../assets/home/desktop/image-hero-trinity.jpg);
+}
+.trinity > .buttonController > button:nth-child(4) {
+    color: var(--very-light-grey);
+    background-color: var(--very-dark-blue);
+} 
+
+@media screen and (max-width:800px) {
+    .hero-content {
+        width: 500px;
+    }
+
+    .hero-content > h2{
+        font-size: 3rem;
+    }
+
+    .buttonController > button{
+        padding: 20px;
+    }
+
+    .hero-content > p {
+        font-size: 1rem;
+    }
+    
+    .hero-content > a{
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+
+    .paramour{
+        background-image: url(../../../../assets/home/tablet/image-hero-paramour.jpg);
+    }
+
+    .federal{
+        background-image: url(../../../../assets/home/tablet/image-hero-federal.jpg);
+    } 
+
+    .seraph{
+        background-image: url(../../../../assets/home/tablet/image-hero-seraph.jpg);
+    } 
+
+    .trinity{
+        background-image: url(../../../../assets/home/tablet/image-hero-trinity.jpg);
+    } 
+}
+
+@media screen and (max-width:586px) {
+    .hero-content {
+        width: 350px;
+    }
+
+    .hero-content > h2{
+        font-size: 2rem;
+    }
+
+    .hero-content > p {
+        font-size: .9rem;
+    }
+
+    .hero-content > a{
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .paramour{
+        background-image: url(../../../../assets/home/mobile/image-hero-paramour.jpg);
+    }
+
+    .federal{
+        background-image: url(../../../../assets/home/mobile//image-hero-federal.jpg);
+    } 
+
+    .seraph{
+        background-image: url(../../../../assets/home/mobile//image-hero-seraph.jpg);
+    } 
+
+    .trinity{
+        background-image: url(../../../../assets/home/mobile//image-hero-trinity.jpg);
+    } 
 }

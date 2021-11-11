@@ -6,10 +6,8 @@ import './hero.css';
 
 const Hero = () => {
     return (
-        <section>
-            <div className="sliders">
-                <HeroSlide slideData={heroCard}/>
-            </div>
+        <section className="hero">
+            <HeroSlide slideData={heroCard}/>
         </section>
     )
 }
