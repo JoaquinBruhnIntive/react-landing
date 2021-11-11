@@ -1,0 +1,23 @@
+.slide{
+    background-color: pink;
+}
+/*----------diferent slide classes------------*/
+.paramour{
+    color: greenyellow;
+    transition: 1s;
+}
+
+.federal{
+    color: brown;
+    transition: 1s;
+}
+
+.seraph{
+    color: red;
+    transition: 1s;
+}
+
+.trinity{
+    color: purple;
+    transition: 1s;
+}
