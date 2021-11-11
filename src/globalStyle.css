@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    font-family: 'Spartan', sans-serif;
+    --very-dark-blue: #1B1D23;
+    --dark-grey: #60636D;
+    --medium-grey: #7D828F;
+    --light-grey: #C8CCD8;
+    --very-light-grey: #EEEFF4;
+    --errors: #DF5656;
+}

@@ -1,3 +1,8 @@
+.main {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 .content{
   padding: 10px;
 }
