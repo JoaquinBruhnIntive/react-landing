@@ -12,7 +12,6 @@ const HeroSlide = ({ slideData }) => {
 
 
     return (
-        <div className="slide-opacity">
             <div className={slideData[currentSlide].class}>
                 <div className="hero-content">
                     <h2>Project</h2>
@@ -22,11 +21,10 @@ const HeroSlide = ({ slideData }) => {
                     </p>
                     <Link to="/portfolio">see our portfolio</Link>
                 </div>
-            <div className="buttonController">
-                {slideData.map((slide, index) => <button onClick={() => toggleSlide(index)}>0{index + 1}</button>)}
-            </div> 
+                <div className="buttonController">
+                    {slideData.map((slide, index) => <button onClick={() => toggleSlide(index)}>0{index + 1}</button>)}
+                </div> 
             </div>
-        </div>
     );
 }
 
