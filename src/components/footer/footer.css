@@ -1,0 +1,85 @@
+@import url(../../globalStyle.css);
+
+
+.footer{
+    display: flex;
+    align-items: flex-end;
+    height: 5rem;
+    width: 100%;
+}
+
+.footer > div:nth-child(1) {
+    background: var(--very-light-grey);
+    padding: 37px 20px;
+}
+
+.footer > div:nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+    background: var(--medium-grey);
+    width: 80%;
+    padding: 50px 50px;
+    position: relative;
+}
+
+.footer > div:nth-child(2) > a:nth-child(1),
+.footer > div:nth-child(2) > a:nth-child(2),
+.footer > div:nth-child(2) > a:nth-child(3) {
+    margin-right: 50px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--very-light-grey);
+}
+
+.footer > div:nth-child(2) > a:nth-child(4) {
+    text-decoration: none;
+    background: var(--very-dark-blue);
+    padding: 20px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--very-light-grey);
+    position: absolute;
+    top: 2rem;
+    right: -3rem;
+}
+
+.footer > div:nth-child(2) > a:nth-child(4):hover {
+    background: var(--dark-grey);
+    transition: 0.2s ease-in-out;
+}
+
+@media screen and ( max-width: 800px ) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .footer > div:nth-child(2){
+        width: 100%;
+    }
+
+    .footer > div:nth-child(2) > a:nth-child(1),
+    .footer > div:nth-child(2) > a:nth-child(2),
+    .footer > div:nth-child(2) > a:nth-child(3) {
+        margin: 20px 0;
+    }
+
+    .footer > div:nth-child(2) > a:nth-child(4) {
+        display: block;
+        position: static;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and ( max-width: 586px ) {
+
+}
