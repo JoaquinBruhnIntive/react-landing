@@ -5,28 +5,38 @@
     overflow: hidden;
     background-position: center;
     background-size: cover;
+    opacity: 0.9;
     transition: 0.4s;
     width: 100%;
     height: 720px;
 }
+
+.slide-opacity{
+    background-color: black;
+}
+
 .hero-content{
     position: absolute;
     width: 600px;
     top: 20px;
     padding:20px;
 }
+
 .hero-content > h2{
     font-size: 4rem;
     color: var(--very-light-grey);
 }
+
 .hero-content > h2:nth-child(2){
     margin-bottom: 20px;
 }
+
 .hero-content > p {
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: var(--very-light-grey);
 }
+
 .hero-content > a{
     font-size: 1.3rem;
     text-decoration: none;
@@ -37,17 +47,20 @@
     background-color: var(--very-dark-blue);
 
 }
+
 .buttonController{
     position: absolute;
     display: inline-block;
     bottom: 0;
 }
+
 .buttonController > button{
     border: none;
     padding: 30px;
     background-color: var(--very-light-grey);
 }
 /*----------diferent slide classes------------*/
+
 .paramour{
     background-image: url(../../../../assets/home/desktop/image-hero-paramour.jpg);
 }

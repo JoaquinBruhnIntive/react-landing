@@ -1,0 +1,76 @@
+@import url(../../../globalStyle.css);
+
+.welcome{
+    position: relative;
+    margin-top: 20rem;
+}
+
+.welcome > h2 {
+    position: absolute;
+    top: -13rem;
+    left: -3rem;
+    font-size: 10rem;
+    display: inline-block;
+    color: var(--light-grey);
+}
+
+.welcome > div {
+    width: 95%;
+}
+
+.welcome > div > h3 {
+    font-size: 4rem;
+    color: var(--very-dark-blue);
+    margin-bottom: 3rem;
+    width: 500px;
+}
+
+.welcome > div > p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1000px){
+    
+    .welcome{
+        margin-top: 10rem;
+    }
+    
+    .welcome > h2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .welcome > div > p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .welcome > div > h3 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        width: 350px;
+    }
+
+    .welcome > div > p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 586px) {
+
+    .welcome > div > h3 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        width: 250px;
+    }
+
+    .welcome > div > p {
+        font-size: 0.9rem;
+    }
+}
