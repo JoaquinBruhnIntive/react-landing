@@ -1,0 +1,157 @@
+@import url(../../../globalStyle.css);
+
+.featured{
+    margin-bottom: 7rem;
+}
+
+.featured > div:nth-child(1){
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.featured > div:nth-child(1) > h2 {
+    font-size: 3rem;
+}
+
+.featured > div:nth-child(1) > a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px 30px;
+    color: var(--very-light-grey);
+    background-color: var(--very-dark-blue);
+}
+
+.featured > div:nth-child(1) > a:hover {
+    background: var(--dark-grey);
+    transition: 0.2s ease-in-out;
+}
+
+.featured > div:nth-child(1) > a > img {
+    margin-left: 10px;
+}
+
+
+.featured > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 500px;
+    position: relative;
+}
+
+.featured > div:nth-child(2) > div{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    min-height: 500px;
+    box-shadow: inset 0 0 0 1000px rgb(17 16 19 / 49%);
+}
+
+.featured > div:nth-child(2) > div:nth-child(1){
+    background-image: url(../../../assets/portfolio/desktop/image-del-sol.jpg);
+}
+
+.featured > div:nth-child(2) > div:nth-child(2){
+    background-image: url(../../../assets/portfolio/desktop/image-228b.jpg);
+}
+
+.featured > div:nth-child(2) > div:nth-child(3){
+    background-image: url(../../../assets/portfolio/desktop/image-prototype.jpg);
+}
+
+.featured > div:nth-child(2) > div > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.featured div:nth-child(2) > div > div > h3 {
+    font-size: 1rem;
+    color: var(--very-light-grey);    
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.featured div:nth-child(2) > div > div > p {
+    color: var(--light-grey);
+    text-transform: capitalize;
+}
+
+.featured div:nth-child(2) > div > div > div{
+    position: absolute;
+    top: 1rem;
+    right: 0.5rem;
+    font-size: 9rem;
+    color: rgba(211, 211, 211, 0.466);
+}
+
+
+@media screen and ( max-width: 800px ) {
+
+    .featured > div:nth-child(1) > h2 {
+        font-size: 2rem;
+    }
+
+    .featured > div:nth-child(1) > a{
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+
+    .featured > div:nth-child(2){
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured > div:nth-child(2) > div:nth-child(1){
+        background-image: url(../../../assets/portfolio/tablet/image-del-sol.jpg);
+    }
+    
+    .featured > div:nth-child(2) > div:nth-child(2){
+        background-image: url(../../../assets/portfolio/tablet/image-228b.jpg);
+    }
+    
+    .featured > div:nth-child(2) > div:nth-child(3){
+        background-image: url(../../../assets/portfolio//tablet/image-prototype.jpg);
+    }
+
+
+}
+
+
+@media screen and ( max-width: 586px ) {
+
+    .featured > div:nth-child(1) > h2 {
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+
+    .featured > div:nth-child(1) > a{
+        font-size: 1rem;
+        padding: 10px 15px;
+        margin-right: 10px;
+    }
+
+    .featured div:nth-child(2) > div > div > div{
+        display: none;
+    }
+
+    .featured > div:nth-child(2) > div:nth-child(1){
+        background-image: url(../../../assets/portfolio/mobile/image-del-sol.jpg);
+    }
+    
+    .featured > div:nth-child(2) > div:nth-child(2){
+        background-image: url(../../../assets/portfolio/mobile/image-228b.jpg);
+    }
+    
+    .featured > div:nth-child(2) > div:nth-child(3){
+        background-image: url(../../../assets/portfolio//mobile/image-prototype.jpg);
+    }
+
+}
