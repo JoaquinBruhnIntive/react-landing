@@ -64,6 +64,10 @@
 
 @media screen and (max-width: 586px) {
 
+    .welcome{
+        padding: 20px;
+    }
+
     .welcome > div > h3 {
         font-size: 2rem;
         margin-bottom: 3rem;

@@ -1,0 +1,79 @@
+@import url(../../../globalStyle.css);
+
+.ideas{
+    height: 700px;
+    padding: 50px;
+    margin-top: 6rem;
+    background-image: url(../../../assets/home/desktop/image-small-team.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.507);
+    margin-bottom: 6rem;
+}
+
+.ideas > div {
+    margin: 100px 0 0 20px;
+}
+
+.ideas > div > h2 {
+    font-size: 4rem;
+    color: var(--very-light-grey);
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+.ideas > div > a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px 30px;
+    color: var(--very-light-grey);
+    background-color: var(--very-dark-blue);
+}
+
+.ideas > div > a:hover {
+    background: var(--dark-grey);
+    transition: 0.2s ease-in-out;
+}
+
+.ideas > div > a > img {
+    margin-left: 10px;
+}
+
+@media screen and ( max-width: 800px ) {
+    
+    .ideas > div {
+        margin: 80px 0 0 20px;
+    }
+
+    .ideas > div > h2 {
+        font-size: 2.5rem;
+        width: 300px;
+        margin-bottom: 40px;
+    }
+    .ideas > div > a{
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+
+}
+
+@media screen and ( max-width: 586px ) {
+
+    .ideas > div {
+        margin: 50px 0 0 10px;
+    }
+
+    .ideas > div > h2 {
+        font-size: 1.8rem;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .ideas > div > a{
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+}
