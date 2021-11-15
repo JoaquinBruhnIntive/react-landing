@@ -1,0 +1,74 @@
+@import url(../../../globalStyle.css);
+
+.about-hero{
+    display: flex;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.about-hero > div:nth-child(1){
+    background-image: url("../../../assets/about/desktop/image-hero.jpg");
+    width: 800px;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.363);
+}
+
+.about-hero > div:nth-child(2){
+    width: 700px;
+    padding: 100px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.about-hero > div:nth-child(2) > div:nth-child(1) {
+    font-size: calc(3rem + 6vw);
+    font-weight: bold;
+    color: var(--very-light-grey);
+    position: absolute;
+    top: -2rem;
+    left: -3rem;
+}
+
+.about-hero > div:nth-child(2) > div:nth-child(2){
+    width: 5rem;
+    height: 1px;
+    background-color: var(--light-grey);
+    margin: 40px 0;
+}
+
+.about-hero > div:nth-child(2) > div:nth-child(3) > h3 {
+    font-size: calc(1rem + 2vw);
+    margin-bottom: 30px;
+}
+
+.about-hero > div:nth-child(2) > div:nth-child(3) > p {
+    line-height: 1.8;
+}
+
+
+@media screen and ( max-width: 800px ) {
+    
+    .about-hero {
+        flex-direction: column;
+    }
+    
+    .about-hero > div:nth-child(1) {
+        height: 15rem;
+        width: 100%;
+        position: relative;
+    }
+    
+    .about-hero > div:nth-child(2) {
+        position: static;
+        width: 100%;
+        padding: 20px;
+    }
+    .about-hero > div:nth-child(2) > div:nth-child(1) {
+        display: none;
+    }
+
+}

@@ -1,0 +1,48 @@
+@import url(../../../globalStyle.css);
+
+.about-heritage {
+    margin-top: 6rem;
+}
+
+.about-heritage > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+}
+
+.about-heritage > div > div:nth-child(1) > h3 {
+    font-size: calc(1rem + 2vw);
+    margin-bottom: 30px;
+}
+
+.about-heritage > div > div:nth-child(1) > p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-heritage > div > div:nth-child(2) {
+    background-image: url("../../../assets/about/desktop/image-heritage.jpg");
+    max-width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+}
+
+@media screen and ( max-width: 800px ) {
+    .about-heritage > div {
+        display: block;
+    }
+
+    .about-heritage > div > div:nth-child(1) {
+        width: 100%;
+        display: block;
+        padding: 20px;
+    }
+
+    .about-heritage > div > div:nth-child(2) {
+        display:none;
+    }
+}

@@ -1,0 +1,55 @@
+@import url(../../../globalStyle.css);
+
+
+.about-leaders {
+    display: flex;
+    justify-content: flex-start;
+    margin: 7rem 0 8rem 0;
+}
+
+.about-leaders > h2 {
+    font-size: calc(1rem + 2vw);
+    margin-right: 3rem;
+}
+
+.about-leaders > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+.about-leaders > div > div > img {
+    width: 100%;
+    position: relative;
+}
+
+.about-leaders > div > div > a > img{
+    padding: 5px;
+}
+
+.about-leaders > div > div > a > img:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1000px rgba(145, 144, 146, 0.507);
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and ( max-width: 800px ) {
+
+    .about-leaders{
+        flex-direction: column;
+    }
+
+    .about-leaders > h2 {
+        margin: 0 20px 2rem ;
+    }
+}
+
+@media screen and ( max-width: 586px ) {
+    
+    .about-leaders > div {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+}
