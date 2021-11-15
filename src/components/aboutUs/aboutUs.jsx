@@ -7,11 +7,11 @@ import "./aboutUs.css"
 
 const AboutUs = () =>{
     return(
-        <section>
+        <>
             <AboutHero />
             <AboutHeritage />
             <AboutLeaders />
-        </section>
+        </>
     )
 }
 export default AboutUs

@@ -1,6 +1,17 @@
+import ContactHero from './contactHero/contactHero';
+import ContactDetails from './contactDetails/contactDetails';
+import ContactMap from './contactMap/contactMap';
+import ContactForm from './contactForm/contactForm';
+
+
 const Contact = () =>{
     return(
-        <h1>Contact</h1>
+        <>
+            <ContactHero />
+            <ContactDetails />
+            <ContactMap />
+            <ContactForm />
+        </>
     )
 }
 export default Contact

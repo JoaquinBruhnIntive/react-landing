@@ -1,0 +1,108 @@
+@import url(../../../globalStyle.css);
+
+.contact-details {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 6rem 0 6rem 0;
+}
+
+.contact-details > h2{
+    font-size: 2.5rem;
+}
+
+.contact-details > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-details > div > * {
+    line-height: 1.9;
+}
+
+.contact-details > div > div {
+    margin: 20px;
+}
+
+.contact-details > div > div > h3 {
+    font-size: 1.5rem;
+}
+
+.contact-details > div > div > div > h3 {
+    font-size: 1.5rem;
+}
+
+.contact-details > div > div > div > div {
+    display: flex;
+}
+
+.contact-details > div > div > div > div > div > p {
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+@media screen and ( max-width: 800px ) {
+    .contact-details{
+        flex-direction: column;
+    }
+
+    .contact-details > h2 {
+        padding-bottom: 30px;
+    }
+
+    .contact-details > div{
+        flex-direction: column;
+    }
+
+    .contact-details > div > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    
+    .contact-details > div > div > h3 {
+        font-size: 1.3rem;
+    }
+    
+    .contact-details > div > div > div > h3 {
+        font-size: 1.3rem;
+    }
+    
+    .contact-details > div > div > div > div {
+        display: flex;
+        margin-top: 20px;
+    }
+    
+    .contact-details > div > div > div > div > div > p {
+        font-size: 0.9rem;
+        padding: 0;
+    }
+    .contact-details > div > div > div > div > div:nth-child(1) > p {
+        margin: 0 10px 0 0;
+    }
+    .contact-details > div > div > div > div > div:nth-child(2) > p {
+        margin: 0 0 0 10px;
+    }
+
+}
+
+@media screen and ( max-width: 586px ) {
+
+    .contact-details > h2 {
+        padding: 30px;
+    }
+
+    .contact-details > div > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+
+
+
+}

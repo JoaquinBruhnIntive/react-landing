@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import richardsImg from "../../../assets/about/desktop/avatar-jake.jpg";
 import smithImg from "../../../assets/about/desktop/avatar-thompson.jpg";
 import rourkeImg from "../../../assets/about/desktop/avatar-jackson.jpg";
@@ -16,25 +18,25 @@ const AboutLeaders = () => {
                     <img src={ richardsImg } alt="" />
                     <h3>Jake Richards</h3>
                     <p>Chief Architect</p>
-                    <a href=""><img src={ linkedin } alt="" /></a><a href=""><img src={ twitter } alt="" /></a>
+                    <Link to="./aboutUs"><img src={ linkedin } alt="" /></Link><Link to="./aboutUs"><img src={ twitter } alt="" /></Link>
                 </div>
                 <div>
                     <img src={ smithImg } alt="" />
                     <h3>Thompson Smith</h3>
                     <p>Head of Finance</p>
-                    <a href=""><img src={ linkedin } alt="" /></a><a href=""><img src={ twitter } alt="" /></a>
+                    <Link to="./aboutUs"><img src={ linkedin } alt="" /></Link><Link to="./aboutUs"><img src={ twitter } alt="" /></Link>
                 </div>
                 <div>
                     <img src={ rourkeImg } alt="" />
                     <h3>Jackson Rourke</h3>
                     <p>Lead Designer</p>
-                    <a href=""><img src={ linkedin } alt="" /></a><a href=""><img src={ twitter } alt="" /></a>
+                    <Link to="./aboutUs"><img src={ linkedin } alt="" /></Link><Link to="./aboutUs"><img src={ twitter } alt="" /></Link>
                 </div>
                 <div>
                     <img src={ simpsonImg } alt="" />
                     <h3>Maria Simpson</h3>
                     <p>Senior Architect</p>
-                    <a href=""><img src={ linkedin } alt="" /></a><a href=""><img src={ twitter } alt="" /></a>
+                    <Link to="./aboutUs"><img src={ linkedin } alt="" /></Link><Link to="./aboutUs"><img src={ twitter } alt="" /></Link>
                 </div>
             </div>
         </section>

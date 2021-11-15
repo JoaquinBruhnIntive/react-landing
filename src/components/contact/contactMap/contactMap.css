@@ -1,0 +1,26 @@
+@import url(../../../globalStyle.css);
+
+.contact-map {
+    margin: 6rem 0 6rem 0;
+    background-image: url("../../../assets/contact/desktop/image-map.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+@media screen and ( max-width: 800px ) {
+    .contact-map {
+        background-image: url("../../../assets/contact/tablet/image-map.png");
+    }
+}
+
+@media screen and ( max-width: 586px ) {
+    .contact-map {
+        background-image: url("../../../assets/contact/mobile/image-map.png");
+        background-size: contain;
+        height: 310px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+@import url(../../../globalStyle.css);
+
+.contact-form {
+    margin: 6rem 0 12rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-form > h2 {
+    font-size: 3rem;
+    max-width: 300px;
+}
+
+.contact-form > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.contact-form > div > input {
+    width: 100%;
+    margin: 10px 0;
+    height: 80px;
+    font-size: 1.3rem;
+    border:none;
+    border-bottom: 1px solid black;
+}
+
+.contact-form > div > label{
+    font-size: 1.3rem;
+    margin: 30px 0 10px;
+    color: var(--dark-grey);
+}
+
+.contact-form > div > label > textarea{
+    width: 100%;
+    font-size: 0.9rem;
+    border:none;
+    border-bottom: 1px solid black;
+}
+
+.contact-form > div > button {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border:none;
+    right: 0;
+    bottom: -80px;
+}
+
+@media screen and ( max-width: 800px ) {
+    
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .contact-form > h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form > div {
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 586px ) {
+    .contact-form {
+        padding: 20px;
+    }
+    .contact-form > div > button {
+        width: 60px;
+        height: 60px;
+        bottom: -60px;
+    }
+}
+
+

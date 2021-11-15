@@ -1,21 +1,22 @@
 @import url(../../../globalStyle.css);
 
-.about-hero{
+.contact-hero{
     display: flex;
     position: relative;
     margin-top: 3rem;
 }
 
-.about-hero > div:nth-child(1){
-    background-image: url("../../../assets/about/desktop/image-hero.jpg");
+.contact-hero > div:nth-child(1){
+    background-image: url("../../../assets/contact/desktop/image-hero.jpg");
     width: 800px;
     height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.363);
+    background-position: 50% 50%;
 }
 
-.about-hero > div:nth-child(2){
+.contact-hero > div:nth-child(2){
     width: 700px;
     padding: 100px;
     background: white;
@@ -24,7 +25,7 @@
     right: 0;
 }
 
-.about-hero > div:nth-child(2) > div:nth-child(1) {
+.contact-hero > div:nth-child(2) > div:nth-child(1) {
     font-size: calc(3rem + 6vw);
     font-weight: bold;
     color: var(--very-light-grey);
@@ -33,42 +34,42 @@
     left: -3rem;
 }
 
-.about-hero > div:nth-child(2) > div:nth-child(2){
+.contact-hero > div:nth-child(2) > div:nth-child(2){
     width: 5rem;
     height: 1px;
     background-color: var(--light-grey);
     margin: 40px 0;
 }
 
-.about-hero > div:nth-child(2) > div:nth-child(3) > h3 {
+.contact-hero > div:nth-child(2) > div:nth-child(3) > h3 {
     font-size: calc(1rem + 2vw);
     margin-bottom: 30px;
 }
 
-.about-hero > div:nth-child(2) > div:nth-child(3) > p {
+.contact-hero > div:nth-child(2) > div:nth-child(3) > p {
     line-height: 1.8;
 }
 
 
 @media screen and ( max-width: 800px ) {
     
-    .about-hero {
+    .contact-hero {
         flex-direction: column;
     }
     
-    .about-hero > div:nth-child(1) {
-        background-image: url("../../../assets/about/tablet/image-hero.jpg");
+    .contact-hero > div:nth-child(1) {
+        background-image: url("../../../assets/contact/tablet/image-hero.jpg");
         height: 15rem;
         width: 100%;
         position: relative;
     }
     
-    .about-hero > div:nth-child(2) {
+    .contact-hero > div:nth-child(2) {
         position: static;
         width: 100%;
         padding: 20px;
     }
-    .about-hero > div:nth-child(2) > div:nth-child(1) {
+    .contact-hero > div:nth-child(2) > div:nth-child(1) {
         display: none;
     }
 
@@ -76,6 +77,6 @@
 
 @media screen and ( max-width: 586px ) {
     .contact-hero > div:nth-child(1) {
-        background-image: url("../../../assets/about/mobile/image-hero.jpg");
+        background-image: url("../../../assets/contact/mobile/image-hero.jpg");
     }
 }
